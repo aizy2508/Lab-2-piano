@@ -1,0 +1,98 @@
+.header {
+  padding: 2rem;
+  text-align: center;
+
+  border-radius: 10px 10px 0 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  
+  flex-direction: column;
+}
+
+.content {
+  display: flex;
+}
+
+.sideContent {
+  padding: 8rem 4rem;
+  min-width: 160px;
+  border-radius: 0 0 10px 10px;
+}
+
+.teclasContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  background-color: #45464b;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.footer{
+  position: fixed;
+  height: 50px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin-bottom: 0px;
+  padding: 0 1rem;
+
+  font-size: 1.2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer strong{
+  color: #6445BF;
+}
+
+.badge a {
+  margin-right: 1rem;
+}
+
+.badge a:hover {
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 1050px) {
+  .sideContent {
+    min-width: 0;
+    padding: 8rem 2rem;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .sideContent {
+    padding: 8rem 1rem;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .header {
+    padding: 1rem;
+  }
+
+  .teclasContainer {
+    height: 100%;
+  }
+
+  .sideContent {
+    padding: 0 1rem;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .teclasContainer {
+    gap: 2px;
+  }
+
+  .footer {
+    font-size: 1rem;
+  }
+}
